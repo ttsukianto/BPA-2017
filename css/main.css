@@ -1,0 +1,414 @@
+@font-face{
+	font-family:agoestoesan;
+	src:url(../fonts/agoestoesan.ttf)
+}
+
+@font-face{
+	font-family: vsf;
+	src:url(../fonts/v64.ttf)
+}
+
+@font-face{
+	font-family: ostrich;
+	src:url(../fonts/ostrich-regular.ttf)
+}
+
+html {
+	overflow: hidden;
+	height: 100%;
+}
+
+body{
+	position: relative;
+	overflow: auto;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	/*min-width: 1150px;*/
+}
+
+#section-intro{
+	/*background: linear-gradient(45deg, rgba(141,238,238,1) 0%, rgba(191,95,255,1) 100%); */
+	height: 900px;
+	position: relative;
+}
+
+#section-intro-project{
+	/*background: linear-gradient(45deg, rgba(141,238,238,1) 0%, rgba(191,95,255,1) 100%); */
+	height: 65px;
+	position: relative;
+}
+
+#background{
+	background: url(../images/background1.jpg);
+	background-size: cover;
+	position: fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	z-index:-1;
+	-webkit-filter: blur(2px) opacity(100%);
+	-moz-filter: blur(2px) opacity(100%);
+	-o-filter: blur(2px) opacity(100%);
+	-ms-filter: blur(2px) opacity(100%);
+	filter: blur(2px) opacity(100%);
+}
+
+#header{
+	height: 65px;
+	background-color: rgba(255, 202, 40, 0.6);
+	width:100%;
+	z-index: 2;
+	text-align: center;
+	margin-top: -15px;
+}
+
+#header ul{
+	line-height: 65px;
+}
+
+#header ul li{
+	list-style: none;
+	display: inline-block;
+}
+
+#header ul li div{
+	font-family: ostrich;
+	color: white;
+	font-size: 24px;
+	position: relative;
+	margin: 0 100px 0 100px;
+	text-align: center;
+	background-color: rgba(0,0,0,0);
+	width: 100px;
+	transition: 1s ease;
+	cursor: pointer;
+}
+
+#header ul li div:hover{
+	background-color: rgba(0,0,0,0.2);
+}
+
+#content{
+	z-index: 5;
+	color: white;
+	margin: 0 auto;
+	position: relative;
+	/*line-height: 600px;*/
+	text-align: center;
+    top: 150px;
+}
+
+#product-name{
+	font-family: ostrich;
+	font-size: 78px;
+	max-height: 10px;
+	letter-spacing: 14px;
+    position: relative;
+}
+
+#product-desc{
+	font-family: ostrich;
+	font-size: 30px;
+	max-height: 10px;
+	letter-spacing: 10px;
+    position: relative;
+    top: 30px;
+}
+
+
+
+#section-about{
+	height: 300px;
+	width: 100%;
+	background-color: rgba(255, 179, 0, 1);
+	/*filter: blur(4px);*/
+	position: relative;
+	top: 15px;
+}
+
+#section-about-content{
+	color: white;
+}
+
+#section-discover{
+	height: 600px;
+	width: 100%;
+	/*background-color: #3E4668;*/
+	background-color: rgba(255, 193, 7, 1);
+	/*filter: blur(4px);*/
+	position: relative;
+	top: -15px;
+}
+
+#section-discover-project{
+	width: 100%;
+	min-height: 1000px;
+	background-color: rgba(255, 193, 7, 1);
+	position: relative;
+}
+
+#section-discover-content{
+
+}
+
+#section-upload{
+	height: 600px;
+	width: 100%;
+	/*background-color: #603E68;*/
+	background-color: rgba(62,70,104,0);
+	/*filter: blur(4px);*/
+	position: relative;
+	/*top: -10px;*/
+}
+
+#section-upload-content{
+
+}
+
+#section-faq{
+	height: 400px;
+	width: 100%;
+	/*background-color: #603E68;*/
+	background-color: rgba(255, 160, 0, 1);
+	/*filter: blur(4px);*/
+	position: relative;
+	/*top: -10px;*/
+}
+
+#section-faq-content{
+
+}
+
+#section-support{
+	height: 600px;
+	width: 100%;
+	/*background-color: #603E68;*/
+	background-color: rgba(62,70,104,0);
+	/*filter: blur(4px);*/
+	position: relative;
+	/*top: -10px;*/
+}
+
+#section-support-content{
+
+}
+
+#footer{
+	height: 50px;
+	width: 100%;
+	background-color: rgba(255, 160, 0, 1);
+	position: relative;
+}
+
+#section-footer-content{
+
+}
+
+#section-about-content,
+#section-discover-content,
+#section-upload-content,
+#section-faq-content,
+#section-support-content,
+#section-footer-content{
+	padding: 5px;
+	text-align: center;
+}
+
+.section-heading{
+	color: white;
+	font-family: ostrich;
+	text-decoration: underline;
+}
+
+.section-subheading{
+	color: white;
+	font-family: ostrich;
+	font-size: 26px;
+}
+
+#about-right{
+	float: right;
+	height: 150px;
+	width: 200px;
+	position: relative;
+	right: 30%;
+	font-family: ostrich;
+	font-size: 24px;
+}
+
+#about-left{
+	float: left;
+	height: 150px;
+	width: 150px;
+	position: relative;
+	left: 30%;
+	font-family: ostrich;
+	font-size: 24px;
+}
+
+#footer-info{
+	margin-bottom: -5px;
+	color: white;
+	float: left;
+	position: relative;
+}
+
+#footer-info a{
+	color: white !important;
+	text-decoration: none;
+}
+
+#footer-info a:hover{
+	color: white;
+}
+
+#footer-info a:visited{
+	color: white;
+}
+
+#random-title{
+	color: white;
+	font-family: sans-serif;
+}
+
+#random-picture{
+	height: 150px;
+	width: 150px;
+	border-radius: 5px;
+}
+
+#random-picture-project{
+	height: 50%;
+	width: 50%;
+	border-radius: 10px;
+}
+
+#random-p{
+	color: white;
+	font-family: sans-serif;
+	height: 200px;
+	text-align: center;
+	font-size: 20px;
+}
+
+#random-p-project{
+	color: white;
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 20px;
+}
+
+#random-p-contain{
+	padding: 0px 250px 0px 250px;
+	overflow: hidden;
+}
+
+#read-more a,
+#read-more a:visited,
+#read-more a:hover
+{
+	color: white;
+	font-family: sans-serif;
+}
+
+#project-return, #project-return:visited{
+	text-decoration: none;
+	color: white;
+	font-family: ostrich;
+	font-size: 36px;
+	opacity: 1;
+	transition: 1s ease;
+}
+
+#project-return:hover{
+	opacity: 0.5;
+}
+
+#header-project{
+	font-family: ostrich;
+	font-size: 26px;
+	color: white;
+}
+
+#upload_your_own{
+	float: left;
+	left: 10%;
+	background: url(../images/create.png) -70px -3px;
+	transition: 1s ease;
+}
+
+#upload_your_own:hover{
+	opacity: 0.75;
+}
+
+#find_others{
+	float: right;
+	right: 10%;
+	background: url(../images/explore.png) -460px -6px;
+	transition: 1s ease;
+}
+
+#find_others:hover{
+	opacity: .75;
+}
+
+.upload-sub{
+	height: 500px;
+	width: 400px;
+	border: 1px solid rgba(255, 179, 0, 1);
+	position: relative;
+	border-radius: 15px;
+}
+
+.entry{
+	height: 150px;
+	width: 150px;
+	transition: 1s ease;
+	border-radius: 10px;
+	background-color: rgba(255, 179, 0, 1);
+	border: 1px solid rgba(255, 160, 0, 1);
+	margin: 10px;
+	display: inline-block;
+	text-align: center;
+}
+
+.entry:hover{
+	opacity: 0.75;
+	cursor: pointer;
+}
+
+.entry p{
+	font-family: sans-serif;
+	color: white;
+	margin: 0;
+	font-size: 20px;
+}
+
+.entry img{
+	height: 128px;
+    width: 150px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#explore-header{
+	color: white;
+	text-align: center;
+	font-family: ostrich;
+}
+
+#create_own{
+	color: white;
+	text-align: center;
+	font-family: ostrich;
+	font-size: 30px;
+}
+
+#section-discover-upload{
+	width: 100%;
+	min-height: 600px;
+	background-color: rgba(255, 193, 7, 1);
+	position: relative;
+}
